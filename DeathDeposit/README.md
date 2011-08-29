@@ -6,8 +6,11 @@ Commands:
 --------
 
 <> - required
-* /ddopen <PlayersName> - Open a specified player's DeathChest
+
+* /ddopen < playersName > - Open a specified player's DeathChest
+
 * /ddsort - sort a chest
+
 * /ddhelp - List of DeathDeposit commands
 
 Known Issues:
