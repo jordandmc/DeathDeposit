@@ -1,0 +1,15 @@
+name: Death Deposit
+main: org.servegame.jordandmc.deathDeposit.DeathDeposit
+version: 1.1
+author: Jordandmc
+softdepend: [Spout]
+commands:
+  ddhelp:
+    description: List of DeathDeposit commands
+    usage: /<command>
+  ddsort:
+    description: sort a chest
+    usage: /<command>
+  ddopen:
+    description: Open a specified player's DeathChest
+    usage: /<command> [playerName]
