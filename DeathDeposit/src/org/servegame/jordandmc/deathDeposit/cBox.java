@@ -9,14 +9,15 @@ import org.getspout.spoutapi.gui.Widget;
 public class cBox extends GenericPopup
 {
 	private InGameHUD screen;
-
-	public cBox(InGameHUD screen)
-	{
+	private DeathDeposit plugin;
+	
+	public cBox(InGameHUD screen){
 		this.screen = screen;
-
-		attachWidget(label("Are you sure you want to exit your DeathChest now?", -20, -30));
-		attachWidget(button("O.K", -55, 20));
-		attachWidget(button("Cancel", 55, 20));
+		plugin = DeathDeposit.getInstance();
+		
+		attachWidget(plugin, label("Are you sure you want to exit your DeathChest now?", -20, -30));
+		attachWidget(plugin, button("O.K", -55, 20));
+		attachWidget(plugin, button("Cancel", 55, 20));
 	}
 
 	private GenericButton button(String text, int offsetX, int offsetY) {
