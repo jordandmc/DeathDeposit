@@ -5,6 +5,7 @@ import org.getspout.spoutapi.gui.GenericLabel;
 import org.getspout.spoutapi.gui.GenericPopup;
 import org.getspout.spoutapi.gui.InGameHUD;
 import org.getspout.spoutapi.gui.Widget;
+import org.getspout.spoutapi.gui.Color;
 
 public class cBox extends GenericPopup
 {
@@ -42,7 +43,7 @@ public class cBox extends GenericPopup
 		lbl.setX(lbl.getX() + offsetX);
 		lbl.setY(lbl.getY() + offsetY);
 
-		lbl.setHexColor("990000".hashCode());
+		lbl.setTextColor(new Color(214, 0, 0));
 
 		return lbl;
 	}
